@@ -1,0 +1,10 @@
+services:
+  notes:
+    build: .
+    ports:
+      - "8000:8000"
+    volumes:
+      - notes_data:/app/data
+
+volumes:
+  notes_data:
